@@ -9,3 +9,9 @@ ion-title{
 ion-button{
     margin-left: 46%;
 }
+@media only screen and (max-width: 750px) {
+
+    ion-button{
+        margin-left: 40%;
+    }
+}
