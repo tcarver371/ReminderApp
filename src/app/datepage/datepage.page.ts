@@ -15,10 +15,11 @@ day;
 
    }
 
-
+//Gets the month that the user selected
 setMonth(){
   this.reminder.setMonth(this.month);
 }
+//Gets the day that the user selected
 setDay(){
   this.reminder.setDay(this.day);
 }

@@ -9,7 +9,7 @@
 
    <ion-list>
         <ion-label>Month</ion-label>
-        <ion-item>
+        <ion-item>                                          <!--Runs the setMonth function-->
             <ion-select [(ngModel)]="month" (ngModelChange)="setMonth()" okText="Okay" cancelText="Dismiss">
               <ion-select-option value="January">January</ion-select-option>
               <ion-select-option value="February">February</ion-select-option>
@@ -28,7 +28,7 @@
     
          
               <ion-label>Day</ion-label>
-              <ion-item>
+              <ion-item>                                        <!--Runs the setDay function-->
                   <ion-select [(ngModel)]="day" (ngModelChange)="setDay()" okText="Okay" cancelText="Dismiss">
                     <ion-select-option value="1">1</ion-select-option>
                     <ion-select-option value="2">2</ion-select-option>

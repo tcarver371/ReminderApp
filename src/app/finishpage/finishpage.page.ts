@@ -12,9 +12,11 @@ text;
   constructor(public reminder: ReminderService, public router: Router) {
 
    }
+   //Gets the text the user entered into the input box and sends it to the reminder service
    setText(){
     this.reminder.setText(this.text);
    }
+   //Saves all the data that we have collected so far
    save(){
      this.reminder.save();
      this.router.navigate(['/home']);
