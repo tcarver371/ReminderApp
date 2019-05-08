@@ -1,0 +1,18 @@
+ion-button{
+    margin-left: 44%;
+}
+ion-list{
+    margin-left: 30%;
+    margin-right: 30%;
+    border: 2px solid black;
+}
+ion-title{
+    text-align: center;
+}
+ion-content{
+    background-image: url('/assets/Images/background.jpg');
+    //I have the image saved into an images folder under assets as well. Couldn't figure out how to get it to work.
+    // It provides no errors so it should be the correct path
+    background-repeat: no-repeat;
+    background-size: cover;
+}

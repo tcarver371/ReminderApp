@@ -1,0 +1,14 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Enter what you wish to be reminded of</ion-title>
+  </ion-toolbar>
+  <ion-button [routerLink]="['/timepage']">Back</ion-button>
+</ion-header>
+
+
+<ion-content>
+  <ion-list>
+  <ion-input [(ngModel)]="text" (ngModelChange)="setText()"></ion-input>
+</ion-list>
+<ion-button (click)="save()">Complete</ion-button>
+</ion-content>
