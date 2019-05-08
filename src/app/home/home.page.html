@@ -11,12 +11,14 @@
   <ion-list>
 
 <!-- I tried to get the reminder to remove via item Sliding but I Couldn't get it to completely work-->
+<!--This is what I had initially, was causing errors in the console so just put it in a comment-->
+<!-- <ion-item-options side = "end" (ionSwipe)= "removeItem(slidingItem, reminders)"></ion-item-options> -->
 
-    <ion-item-sliding #slidingItem *ngFor="let r of reminders">
+    <ion-item-sliding *ngFor="let r of reminders">
       <ion-item>
       {{r.month}} {{r.day}}, {{r.hour}}:{{r.minute}} {{r.timeofDay}}. {{r.text}}
     </ion-item>
-    <ion-item-options side = "end" (ionSwipe)= "removeItem(slidingItem, reminders)"></ion-item-options>
+    
     </ion-item-sliding>
   </ion-list>
     <ion-button [routerLink]="['/datepage']">Set New Reminder</ion-button>
